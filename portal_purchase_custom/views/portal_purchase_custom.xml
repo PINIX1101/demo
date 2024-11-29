@@ -40,8 +40,9 @@
                                         <td class="text-end">
                                             <div id="quote_qty">
                                                 <div class="input-group">
-                                                    <input class="form-control text-end" t-att-name="'product_qty'+str(line_count)" t-att-value="line.product_qty" t-att-disabled="true"/>
+                                                    <input class="form-control text-end" t-att-value="line.product_qty" t-att-disabled="true"/>
                                                 </div>
+                                                <input class="form-control text-end" t-att-name="'product_qty'+str(line_count)" t-att-value="line.product_qty" type="hidden"/>
                                                 <span t-field="line.product_uom" groups="uom.group_uom"/>
                                             </div>
                                         </td>
